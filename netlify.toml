@@ -1,0 +1,4 @@
+[build.environment]
+  # Pin Python so the build image doesn't fall back to its newest default
+  # (3.14), which Pillow 10.3.0 and the other pinned packages don't support.
+  PYTHON_VERSION = "3.12"
